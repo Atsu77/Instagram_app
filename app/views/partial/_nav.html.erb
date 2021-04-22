@@ -12,6 +12,9 @@
                         <a class="nav-link" href="#">投稿</a>
                     </li>
                     <li class="nav-item">
+                        <%= link_to "ユーザーページ", user_path(current_user), class:"nav-link"%>
+                    </li>
+                    <li class="nav-item">
                         <%= link_to "サインアウト", destroy_user_session_path, method: :delete, class:"nav-link"%>
                     </li>
                 </ul>
